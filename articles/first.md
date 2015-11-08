@@ -3,7 +3,7 @@
 [tag: tag-one]
 [tag: tag-two]
 
-# This Is My Very First Post
+# This Is My First Post
 
 If you don't include a date tag, we'll use the date that we first detected the article in your repo. Articles published in the future won't be visible until that date.
 
