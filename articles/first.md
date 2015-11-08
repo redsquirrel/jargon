@@ -20,7 +20,3 @@ Mixing code and prose in the same file can be cumbersome. To make it easier, we 
 You can also include specific line number ranges from a snippet:
 
 [snippet: example.rb:4,6]
-
-## Subheader
-
-We'll use the first h1 in your file as the article title. If we don't detect an h1, we'll generate a title from the file name. All subsequent headers in the article should start at h2.
