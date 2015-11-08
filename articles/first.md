@@ -20,3 +20,5 @@ Mixing code and prose in the same file can be cumbersome. To make it easier, we 
 You can also include specific line number ranges from a snippet:
 
 [snippet: example.rb:4,6]
+
+foo
