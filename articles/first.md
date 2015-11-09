@@ -9,3 +9,5 @@ I helped build [Jargon](http://jargon.io) during the 2015 Rails Rumble competiti
 * No full-time jobs.
 * Stay with [Dev Bootcamp](http://devbootcamp.com) long-term.
 
+**Update**: [Mike](https://twitter.com/mikelikesbikes) asked a [clarifying question](https://twitter.com/mikelikesbikes/status/663805691811921920) about my priorities.
+
