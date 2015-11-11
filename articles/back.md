@@ -10,7 +10,7 @@ My Github page tells part of the story:
 
 I dove back into developing software in early August. It was daunting and a bit scary. Impostor syndrome reared its head a few times after I took on a project to develop an [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) for a startup. After a few months under my belt, I'm feeling great, and I'm hungry for more.
 
-Just like 13 years ago as I was starting to poke my head out from my self-study and pet projects and into the wider software development community, I'm ready to start blogging again. And I plan to start blogging in the same way that I blogged back in the day.
+In 2002, I was starting to poke my head out from my self-study and pet projects and into the wider software development community. I connected with the community through the written word then, I'm ready to take that same approach again. And I plan to start blogging in the same style that I blogged back in the day.
 
 I'll share code snippets. I'll share my thoughts. I'll pose questions.
 
@@ -19,6 +19,7 @@ I won't be writing well-formed essays or articles. I'm getting back to my roots,
 By the way, here's my favorite little quirky code from today:
 
 ```ruby
+today = Date.current
 # Last Monday (or today)
 today -= 1 while today.wday != 1
 ```
