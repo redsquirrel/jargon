@@ -2,7 +2,7 @@
 
 # Back to my roots
 
-I've been blogging for over 13 years. Here's [my first post](http://www.redsquirrel.com/blog/archives/00000004.html) from 2002. I'm thinking about that post and that year for a couple reasons. First, I'm thinking about blogging because I helped develop [jargon.io](http://jargon.io) last weekend, but also because I'm actively developing software again. I've been writing less and less code over the past five or so years as I took on some leadership roles at Obtiva, Groupon, and Dev Bootcamp. Now I'm taking a step back and reconfiguring my worklife.
+I've been blogging for over 13 years. Here's [my first post](http://www.redsquirrel.com/blog/archives/00000004.html) from 2002. I'm thinking about that post and that year for a couple reasons. I'm thinking about blogging because I helped develop [jargon.io](http://jargon.io) last weekend, but also because I'm actively developing software again. I had been writing less and less code over the past five years as I took on some leadership roles at Obtiva, Groupon, and Dev Bootcamp. Now I'm taking a step back and reconfiguring my worklife.
 
 My Github page tells part of the story:
 
