@@ -1,4 +1,4 @@
-[title: Reconsidering: Cakes]
+# Reconsidering: Cakes
 
 [David Heinemeier Hansson](http://david.heinemeierhansson.com/)'s recent post [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider) has been bouncing around in my head since the day it was published. I'm going to try to blog few times this week about it, since I'm in [short-and-unstructured blogging mode](http://jargon.io/redsquirrel/back) these days.
 
