@@ -4,11 +4,11 @@ It was startling for me to see [David Heinemeier Hansson](http://david.heinemeie
 
 I appreciate David's aggressive approach. The "Get Big or GTFO" unicorn-hunting mindset is so pervasive in startup culture that people have stopped questioning it. Some even faithfully evangelize the message. Loudly. The reason David's post stands out is because "...people building profitable companies outside the sphere of the VC dominion have little systemic need to tell their story." Despite having little incentive to tell his story, he took the time to do it.
 
-Inspired by RECONSIDER, I'm going to tell some of my story, which is largely about helping founders build profitable companies outside the sphere of VC dominion. But my story also includes startups that benefitted from angel investors, along with my own story of becoming an angel investor. And finally, my experience watching VC values overtake Chicago's best-known "unicorn".
+Inspired by RECONSIDER, I'm going to tell some of my story.
 
 ## Getting good
 
-I'm a self-taught software developer, so the first 5 years of my career were spent in a self-constructed, self-directed apprenticeship. These years were capped off by a two year stint at ThoughtWorks, where I got to "be the worst guy in the band" for a while, and learned from some excellent software developers.
+I'm a self-taught software developer, so the first 5 years of my career were spent in [a self-constructed, self-directed apprenticeship](http://chimera.labs.oreilly.com/books/1234000001813/index.html). These years were capped off by a two year stint at ThoughtWorks, where I got to "be the worst guy in the band" for a while, and learned from some excellent software developers.
 
 I left ThoughtWorks in 2006 with a lot of other good software developers who wanted to transition from writing Java code for Fortune 500 companies to writing Ruby code for startups. I joined Obtiva, a 3-person Java-focused consultancy in Wheaton, Illionis, and within a year, I landed us a full-time Ruby on Rails gig ([Mad Mimi](http://madmimi.com)) for me to work on.
 
@@ -16,7 +16,7 @@ I left ThoughtWorks in 2006 with a lot of other good software developers who wan
 
 From 2006-2011, I helped grow both Obtiva and Mad Mimi.
 
-Obtiva was a bootstrapped and profitable custom software consultancy, a "dev shop", a bunch of software developers who companies paid to deliver software. We grew our business by writing great software and apprenticing great software developers.
+Obtiva was a bootstrapped and profitable custom software consultancy, a "dev shop", a bunch of software developers who companies paid to deliver software. We grew our business by writing great software and apprenticing people into great software developers.
 
 Mad Mimi was founded by a guy who had a bit of angel funding, and he spent most of that money on getting his software system built by me and a few other contractors. Once the system was released to the public, Mad Mimi gradually became profitable. They grew organically through astoundingly good customer service, and were never in a position where they needed additional capital to grow.
 
