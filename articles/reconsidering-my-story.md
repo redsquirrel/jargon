@@ -38,11 +38,11 @@ In 2011, Groupon bought Obtiva. In 2014, GoDaddy bought Mad Mimi, and Kaplan bou
 
 ## Angel investing
 
-From 2012-2015, I invested in 13 different startups, and even successfully [syndicated](https://angel.co/davehoover/syndicate) a deal through AngelList. I have learned and continue to learn directly and indirectly from the founders I've invested in. I have also connected with several different venture capitalists in Chicago and Silicon Valley, and gradually learned some of their convential wisdoms. I way "wisdoms" here because, as you might expect, the wisdom of the Silicon Valley VC is different from the Chicago VC.
+From 2012-2015, I invested in 13 different startups, and even successfully [syndicated](https://angel.co/davehoover/syndicate) a deal through AngelList. I have learned and continue to learn directly and indirectly from the founders I've invested in. I have also connected with many different angel investors and venture capitalists in Chicago and Silicon Valley, and gradually learned some of their convential wisdoms. I way "wisdoms" here because, as you might expect, the wisdom of the Silicon Valley VC is different from the Chicago VC.
 
-From a VC perspective, "the San Franciscan economic model" can be summed up as the unicorn hunt. Herd as many different high-potential little critters onto your game reserve, check in on the critters over 5-10 years, and hopefully one little critter will emerge as a unicorn. This unicorn will generate an enormous amount of wealth for many people, including the VC, and will allow them to build a bigger game reserve for the next hunt. This incredible cycle has repeated itself so many times over the past 40 years that the SV VC convential wisdom has leaked out and influenced the convential wisdoms of VCs big and small, as well as angel investors, regardless of where they operate. I'll get back to this, but like David, I think many people need to wake up and reject a "conventional wisdom" that doesn't apply to us.
+From a VC perspective, "the San Franciscan economic model" can be summed up as the unicorn hunt. Herd as many different high-potential little critters onto your game reserve, check in on the critters over 5-10 years, and hopefully one little critter will emerge as a unicorn. This unicorn will generate an enormous amount of wealth for many people, including the VC, and will allow them to build a bigger game reserve for the next hunt. This incredible cycle has repeated itself so many times over the past 40 years that the SV VC convential wisdom has leaked out and influenced the convential wisdoms of VCs big and small, as well as angel investors, regardless of where they operate. I'll write more about this in my next post, but like David, I think many people need to wake up and reject a "conventional wisdom" that just doesn't apply to us.
 
-From a VC perspective, "the Chicago way" is, as you might expect, a lot more conservative. Not m(any) modern unicorns have emerged from the Chicago startup ecosystem, and so there are fewer audacious startups to invest in. Even if there were more aspiring unicorns here, not many of our VCs or angels have experience investing in them. The pattern matching that investors invariably use to take educated guesses on which startup will succeed is not tuned into the Chicago unicorn hunt.
+From a VC perspective, "the Chicago way" is, as you might expect, a lot more conservative. Not m(any) modern unicorns have emerged from the Chicago startup ecosystem, and so there are fewer audacious startups to invest in. Even if there were more aspiring unicorns here, not many of our VCs or angels have experience investing in them. The pattern matching that investors invariably use to take educated guesses on which startup will succeed is not well-tuned for unicorn hunting.
 
 Thankfully, what I've found is that in Chicago, you can balance your startup investments along the spectrum that David described as: 
 
@@ -55,10 +55,10 @@ Investor friends in SF have told me that I'm doing it wrong. They've told me:
 * I haven't invested in enough companies. It should be 30, not 13.
 * I shouldn't invest in companies that aren't aspiring unicorns.
 
-They might be right. And for a while I was sure they were right. But I believe I have a few things going for me as a tech investor, and these brought me back to my approach:
+They might be right. And for a while I was sure they were right. But these days I'm not so sure. I do have a few strengths as a startup investor:
 
 * I know (intimately) how successful tech entrepreneurs operate. I can pattern match using my experiences at Obtiva, Mad Mimi, Groupon, and Dev Bootcamp.
-* I can read people well. Before I learned how to build software systems, I studied psychology for 6 years, and was a practicing family therapist.
+* I am good at reading people and interpersonal dynamics. Before I learned how to build software systems, I studied psychology for 6 years, and was a practicing family therapist.
 * 12 of my 13 startups are [still going](http://www.inc.com/magazine/201407/jason-fried/the-challenge-in-business-is-staying-in-business.html)!
 * The other one [got acquired](http://www.chicagobusiness.com/article/20150820/BLOGS11/150819779/raise-com-buys-tastebud-doubles-staff) this year!
 
@@ -66,4 +66,4 @@ They might be right. And for a while I was sure they were right. But I believe I
 
 If you're still reading, I hope you learned something along the way. I learn from writing, so at least it helped me!
 
-My next "Reconsidering" post will be about why I have no interest in taking any investments in my future business endeavors.
+My next "Reconsidering" post will be about why I have no interest in taking investments in any of my future business endeavors.
