@@ -66,4 +66,4 @@ They might be right. And for a while I was sure they were right. But these days 
 
 If you're still reading, I hope you learned something along the way. I learn from writing, so at least it helped me!
 
-My next "Reconsidering" post will be about why I have no interest in taking investments in any of my future business ventures.
+My next "Reconsidering" post will be about why I have no interest in taking investments in any of my future business ventures, and why I'm taking a break from angel investing.
