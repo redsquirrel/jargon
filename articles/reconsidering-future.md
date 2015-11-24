@@ -2,7 +2,7 @@
 
 This is my final [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider)-inspired post.
 
-I spent a lot of 2015 considering how I would spend my time on in 2016. I was honestly all over the place. I considered:
+I spent a lot of 2015 considering how I would spend my time in 2016. I was honestly all over the place. I considered:
 
 * Taking the year off
 * Starting a tech-focused seed fund
