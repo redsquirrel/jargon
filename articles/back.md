@@ -6,7 +6,7 @@ I've been blogging for over 13 years. Here's [my first post](http://www.redsquir
 
 My Github page tells part of the story of this year:
 
-![Github contributions](https://raw.githubusercontent.com/redsquirrel/jargon/master/images/github-contributions-2015.jpg)
+![Github contributions](/images/github-contributions-2015.jpg)
 
 I dove back into developing software in early August. It was daunting and a bit scary. Impostor syndrome reared its ugly head a few times, especially when I took on a project to develop an [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) for a startup. Now, after a few months under my belt, I'm feeling great, and I'm hungry for more.
 
