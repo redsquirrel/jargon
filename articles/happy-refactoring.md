@@ -29,6 +29,10 @@ class Rule
   def root
     child? ? parent : self
   end
+
+  def child?
+    parent.present?
+  end
 end
 ```
 
