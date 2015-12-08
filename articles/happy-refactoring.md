@@ -36,4 +36,3 @@ class Rule
 end
 ```
 
-(hi joey)
