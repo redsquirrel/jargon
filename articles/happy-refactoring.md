@@ -10,6 +10,14 @@ class Requirement
     rules.map { |rule| rule.child? ? rule.parent : rule }
   end
 end
+
+class Rule
+  belongs_to :parent, class_name: "Rule", foreign_key: :parent_id
+
+  def child?
+    parent.present?
+  end
+end
 ```
 
 After:
