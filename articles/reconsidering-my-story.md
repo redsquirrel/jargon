@@ -1,4 +1,4 @@
-[tags: reconsider]
+[tag: reconsider]
 
 # Reconsidering: My story
 
