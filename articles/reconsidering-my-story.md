@@ -1,3 +1,5 @@
+[tags: reconsider]
+
 # Reconsidering: My story
 
 It was startling for me to see [David Heinemeier Hansson](http://david.heinemeierhansson.com/) quote the Bible in his recent blog post titled [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider). He attempted to paint "the San Franciscan economic model" as a religion, with references to "[angel investors](https://en.wikipedia.org/wiki/Angel_investor)", Mecca (SF), and liquidity events (baptism).

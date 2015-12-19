@@ -1,3 +1,5 @@
+[tags: reconsider]
+
 # Reconsidering: The future
 
 This is my final [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider)-inspired post.
