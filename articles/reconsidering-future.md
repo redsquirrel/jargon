@@ -2,7 +2,7 @@
 
 # Reconsidering: The future
 
-This is my final [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider)-inspired post.
+This is my final [RECONSIDER](https://signalvnoise.com/posts/3972-reconsider)-inspired post. [Here are all of them.](http://jargon.io/site/tags/reconsider)
 
 I spent a lot of 2015 considering how I would spend my time in 2016. I was honestly all over the place. I considered:
 
