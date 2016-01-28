@@ -1,4 +1,6 @@
-January Learnings: meandering blockchain beginner
+[tag: learnings]
+
+# January Learnings: meandering blockchain beginner
 
 Over the past 4 weeks, I've been reading about Bitcoin and the blockchain that it relies on for the distributed ledger that makes the magic happen.
 
