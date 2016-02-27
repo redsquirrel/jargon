@@ -60,4 +60,10 @@ Any data transmitted from the Bitcoin node is simply passed into the `Bitcoin::P
 
 [snippet: btc_transaction_firehose.rb:30,48]
 
-The rest of these methods are all called by the parser, which I harvested from Toshi. I don't yet fully understand what `on_ping`, `on_inv_transaction`, and `on_inv_block_v2` are doing, and how they fit into the interactions. `on_tx` is the important one, and that's where we pass the transaction (tx) to our little database.
+The rest of these methods are all called by the parser, which I harvested from Toshi. I don't yet fully understand what `on_ping`, `on_inv_transaction`, and `on_inv_block_v2` are doing, and how they fit into the interactions. `on_tx` is the important one, and that's where we pass the transaction (tx) to our little "database".
+
+[snippet: btc_transaction_firehose.rb:52,64]
+
+Our dumb little database is just a `Set` that we use to track whether we've already seen a transaction. Since we're connecting to around 10 nodes, we're going to see a bunch of duplicate transactions. I'd like to show each transaction once, and only once. So if it's the first time we've seen it, we store the [transaction id hash](https://bitcoin.org/en/glossary/txid). Then we have a little fun and add up the total [output](https://en.bitcoin.it/wiki/Transaction#Output) value of the transaction and print it to the screen!
+
+Head over to the [gist](https://gist.github.com/redsquirrel/bce4ffbf0c677ac78fa7), try it out, and leave a comment!
