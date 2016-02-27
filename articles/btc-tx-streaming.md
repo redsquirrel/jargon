@@ -18,7 +18,7 @@ If you'd like to run it yourself, you'll need to:
 
 ## How it works
 
-I'm going to step through it line by line, in the approximate order of execution:
+I'm going to step through [the program](https://gist.github.com/redsquirrel/bce4ffbf0c677ac78fa7) line by line, in the approximate order of execution:
 
 [snippet: btc_transaction_firehose.rb:1,5]
 
@@ -30,6 +30,16 @@ Skipping past `BitcoinTransactionReader` and `BitcoinTransactionDatabase` for a 
 
 [snippet: btc_transaction_firehose.rb:68,70]
 
-We need to connect to the Bitcoin network, and the standard way of doing this is to select a random node out of a set of known addresses, and then grab a bunch of addresses from that node. We use the [bitcoin-ruby](https://github.com/lian/bitcoin-ruby) gem to get a random address from its `:dns_seeds`.
+In order to stream transactions, we'll need to connect to the Bitcoin network. The standard way of making an intial connection is to select a random node out of a set of known addresses, and then grab a bunch of addresses from that node. We use the [bitcoin-ruby](https://github.com/lian/bitcoin-ruby) gem to get a random address from its `:dns_seeds`.
 
 I don't actually understand DNS well enough to explain what's going on here: `Resolv::DNS.new.getresources(seed, Resolv::DNS::Resource::IN::A)`. If anyone wants to explain it via the [gist](https://gist.github.com/redsquirrel/bce4ffbf0c677ac78fa7) comments, feel free! Basically, though, we end up with around 8-14 IP addresses, all of which represent nodes in the Bitcoin network.
+
+[snippet: btc_transaction_firehose.rb:71]
+
+We initialize a `BitcoinTransactionDatabase`, which is just a little class that wraps a Ruby `Set`. As you'll see, every time we receive a transaction, we'll pass it to the database to process. We need to initialize the "database" up in the global scope because we're about to jam it into a bunch of different connections to Bitcoin nodes.
+
+[snippet: btc_transaction_firehose.rb:73,78]
+
+We use Ruby's [EventMachine](https://github.com/eventmachine/eventmachine) to do all of the hard networking stuff. I read a nice tutorial [here](http://20bits.com/article/an-eventmachine-tutorial). (Thanks Jesse!)
+
+We loop through all of the IP addresses, connecting to each one on the default Bitcoin port of `8333`. We pass in the `BitcoinTransactionReader` module (which EventMachine mixes into its Connection class), and also pass in the address (again) and our little database. These are passed to the `initialize` method defined in `BitcoinTransactionReader`.
