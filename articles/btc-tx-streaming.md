@@ -52,7 +52,7 @@ The `BitcoinTransactionReader` needs to hook into two libraries. It needs to imp
 
 [snippet: btc_transaction_firehose.rb:15,22]
 
-Immediately after the connection is made to the Bitcoin node, EventMachine calls `post_init`. We use EventMachine's `send_data` method to reply with our version information, which includes the MY_USER_AGENT_STRING we defined earlier. Based on what I learned from Toshi, this appears to start a handshake between us and the Bitcoin node.
+Immediately after the connection is made to the Bitcoin node, EventMachine calls `post_init`. We use EventMachine's `send_data` method to reply with our version information, which includes the MY\_USER\_AGENT\_STRING we defined earlier. Based on what I learned from Toshi, this appears to start a handshake between us and the Bitcoin node.
 
 [snippet: btc_transaction_firehose.rb:24,26]
 
