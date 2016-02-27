@@ -4,7 +4,7 @@
 
 # Bitcoin Padawan finally writes some code
 
-I've been exploring the Bitcoin ecosystem for the last two months. My [previous](http://jargon.io/redsquirrel/learnings-january) [posts](http://jargon.io/redsquirrel/learnings-mid-february) are representative of most of my time thus far: lots and lots of reading. The vast majority of that reading has been reading papers and blog posts. Over the last couple weeks, though, I started reading more code.
+I've been exploring the Bitcoin ecosystem for the last two months. My [previous](http://jargon.io/redsquirrel/learnings-january) [posts](http://jargon.io/redsquirrel/learnings-mid-february) are representative of most of my time thus far: lots and lots of reading. The vast majority of that reading has been papers and blog posts. Over the last couple weeks, though, I started reading more code.
 
 My [21 computer](http://21.co) is full of Python. [Bitcoin core](https://github.com/bitcoin/bitcoin) is mostly C++. I've also looked at the [Lightning Network Daemon](https://github.com/LightningNetwork/lnd), which is in Go. Yet, like most people, I find it hard to learn something new while also learning a new language. So I keep coming back to Ruby, a langauge I've been reading and writing since 2002. Thankfully, there are some great open source Bitcoin libraries and applications written in Ruby, most notably, [Toshi](https://toshi.io/).
 
@@ -22,15 +22,15 @@ I'm going to step through [the program](https://gist.github.com/redsquirrel/bce4
 
 [snippet: btc_transaction_firehose.rb:1,5]
 
-Here, I'm just requiring the different gems and libraries I needed to make this work. `bitcoin` and `eventmachine` are both gems, while `resolv` and `set` are in Ruby's standard library.
+Here, I'm just requiring the different gems and libraries I needed to make this work. `bitcoin` and `eventmachine` are both gems, while `resolv` and `set` come from Ruby's standard library.
 
 [snippet: btc_transaction_firehose.rb:66]
 
-Skipping past `BitcoinTransactionReader` and `BitcoinTransactionDatabase` for a moment, I've defined the `MY_USER_AGENT_STRING` constant. Actually, you'll need to define it before this code will work. Replace `put_something_here` with a String that is uniquely yours. This will give the Bitcoin nodes you connect to a little information about who is connecting to them. We'll use this constant up in `BitcoinTransactionReader`.
+Skipping past `BitcoinTransactionReader` and `BitcoinTransactionDatabase` for a moment, I've defined the `MY_USER_AGENT_STRING` constant. Actually, you'll need to define it before this code will work. Replace `put_something_here` with a String that is uniquely yours. This will give the Bitcoin nodes you connect to a little information about who is connecting to them. As you'll see, we'll use this constant up in `BitcoinTransactionReader`.
 
 [snippet: btc_transaction_firehose.rb:68,70]
 
-In order to stream transactions, we'll need to connect to the Bitcoin network. The standard way of making an intial connection is to select a random node out of a set of known addresses, and then grab a bunch of addresses from that node. We use the [bitcoin-ruby](https://github.com/lian/bitcoin-ruby) gem to get a random address from its `:dns_seeds`.
+In order to stream transactions, we'll need to connect to the Bitcoin network. The standard way of making an initial connection is to select a random node out of a set of known addresses, and then grab a bunch of addresses from that node. We use the [bitcoin-ruby](https://github.com/lian/bitcoin-ruby) gem to get a random address from its `:dns_seeds`.
 
 I don't actually understand DNS well enough to explain what's going on here: `Resolv::DNS.new.getresources(seed, Resolv::DNS::Resource::IN::A)`. If anyone wants to explain it via the [gist](https://gist.github.com/redsquirrel/bce4ffbf0c677ac78fa7) comments, feel free! Ultimately, we end up with around 8-14 IP addresses, all of which represent nodes in the Bitcoin network. (Note: some of the `:dns_seeds` are unresponsive, so you'll need to kill your program and try again when you get them.)
 
@@ -40,19 +40,19 @@ We initialize a `BitcoinTransactionDatabase`, which is just a little class that 
 
 [snippet: btc_transaction_firehose.rb:73,78]
 
-We use Ruby's [EventMachine](https://github.com/eventmachine/eventmachine) to do all of the hard networking stuff. I read a nice EventMachine tutorial [here](http://20bits.com/article/an-eventmachine-tutorial). (Thanks Jesse!)
+We use Ruby's [EventMachine](https://github.com/eventmachine/eventmachine) to do all of the hard networking stuff. If you're unfamiliar with EventMachine, there's a nice tutorial [here](http://20bits.com/article/an-eventmachine-tutorial). (Thanks Jesse!)
 
-We loop through all of the IP addresses, connecting to each one on the default Bitcoin port of `8333`. We pass in the `BitcoinTransactionReader` module (which EventMachine mixes into its [Connection](http://www.rubydoc.info/gems/eventmachine/EventMachine/Connection) class), and also pass in the address (again) and our little database. These are passed to the `initialize` method defined in `BitcoinTransactionReader`.
+We loop through all of the IP addresses, connecting to each one on the default Bitcoin port of `8333`. We pass in the `BitcoinTransactionReader` module (which EventMachine mixes into its [Connection](http://www.rubydoc.info/gems/eventmachine/EventMachine/Connection) class), and pass in the address (again), as well as our little database. These last two are passed to the `initialize` method defined in `BitcoinTransactionReader`.
 
 [snippet: btc_transaction_firehose.rb:7,12]
 
 A `BitcoinTransactionReader` will be created for *each* connection we make to a Bitcoin node. We set it up with its instance variables. The interesting one is `Bitcoin::Protocol::Parser.new(self)`. The reader passes *itself* into the parser, and we'll see how that works in a moment.
 
-At a high level, the `BitcoinTransactionReader` needs to hook into two libraries. It needs to implement some of the EventMachine connection hooks as well as implementing some of the `Bitcoin::Protocol::Parser` methods.
+The `BitcoinTransactionReader` needs to hook into two libraries. It needs to implement some of the EventMachine connection hooks as well as implementing some of the `Bitcoin::Protocol::Parser` methods.
 
 [snippet: btc_transaction_firehose.rb:15,22]
 
-Immediately after the connection is made to the Bitcoin node, EventMachine calls `post_init`. We use EventMachine's `send_data` method to reply with our version information. Based on what I learned from Toshi, this appears to start a handshake between us and the Bitcoin node.
+Immediately after the connection is made to the Bitcoin node, EventMachine calls `post_init`. We use EventMachine's `send_data` method to reply with our version information, which includes the MY_USER_AGENT_STRING we defined earlier. Based on what I learned from Toshi, this appears to start a handshake between us and the Bitcoin node.
 
 [snippet: btc_transaction_firehose.rb:24,26]
 
