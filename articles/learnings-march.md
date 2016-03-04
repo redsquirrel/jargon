@@ -1,0 +1,9 @@
+[tag: learnings]
+
+# Early March Learnings: Bitcoin transaction coder
+
+Over the past two weeks, my Bitcoin learnings have morphed from "READ ALL THE PAPERS!" to writing code and working through the [Mastering Bitcoin](http://shop.oreilly.com/product/0636920032281.do) book. It has been a productive time, with the big breakthrough being [my first connections to the global Bitcoin node network](http://jargon.io/redsquirrel/btc-tx-streaming) last weekend. I'm happy to report that I just crossed my next milestone: my latest little Ruby script successfully [pushed a transaction](https://blockexplorer.com/tx/28fc89f8d488deddd446980c1b238a02da3cbffa76e0099c43a474e1fe02fc70) into the Bitcoin network, which was included in Block #401120!
+
+To be clear, nobody other than me cares about this transaction. ([Hit me up on Twitter](https://twitter.com/davehoover) if you want to see the code.) It's just transferring a tiny amout of bitcoin from me to myself. That said, it's an important step for me in my learning process. And now onto the next step: create a transaction that uses [OP_RETURN](https://en.bitcoin.it/wiki/OP_RETURN) to store some data on the blockchain.
+
+One final note: the bitcoins that I'm transferring around were "mined" on my [21 computer](http://21.co). I appreciate that 21 is seeding the Bitcoin micropayment/developer community with tiny amounts of bitoin for us to learn with. I'm happy to have a 21 computer, and grateful for the incredibly responsive [Will Binns](https://twitter.com/21binns) on their developer community slack channel. The more I learn about Bitcoin, though, the less excited I'm getting about 21. Their business model seems to create a middle-man dynamic that Bitcoin was meant to circumvent.
