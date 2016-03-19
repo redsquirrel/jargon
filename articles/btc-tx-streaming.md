@@ -26,7 +26,7 @@ Here, I'm just requiring the different gems and libraries I needed to make this 
 
 [snippet: btc_transaction_firehose.rb:66]
 
-Skipping past `BitcoinTransactionReader` and `BitcoinTransactionDatabase` for a moment, I've defined the `MY\_USER\_AGENT\_STRING` constant. Actually, you'll need to define it before this code will work. Replace `put_something_here` with a String that is uniquely yours. This will give the Bitcoin nodes you connect to a little information about who is connecting to them. As you'll see, we'll use this constant up in `BitcoinTransactionReader`.
+Skipping past `BitcoinTransactionReader` and `BitcoinTransactionDatabase` for a moment, I've defined the `MY_USER_AGENT_STRING` constant. Actually, you'll need to define it before this code will work. Replace `put_something_here` with a String that is uniquely yours. This will give the Bitcoin nodes you connect to a little information about who is connecting to them. As you'll see, we'll use this constant up in `BitcoinTransactionReader`.
 
 [snippet: btc_transaction_firehose.rb:68,70]
 
