@@ -4,7 +4,7 @@
 
 Mid-month update! I've been continuing to dig into Bitcoin, and am now totally excited about the impications of [Lightning Networks](https://lightning.network/).
 
-The last few weeks have been eye opening to me as I've now learned enough to be able to distinguish the hype from reality. And the reality of Bitcoin is challenging, but I'm still optimistic, not just because of Lightning, but because of the incredible mindshare the digitical currency community has drawn together.
+The last few weeks have been eye opening to me as I've now learned enough to be able to distinguish the hype from reality. And the reality of Bitcoin is challenging, but I'm still optimistic, not just because of Lightning, but because of the incredible mindshare the digital currency community has drawn together.
 
 Here are some of the resources I've recently benefitted from:
 
